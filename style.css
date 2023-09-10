@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zeyada&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 200px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3a6cf4;
+    font-size: 1.8em;
+    font-weight: 800;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color:#3a6cf4;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color:#601cfc;
+}
+
+.main {
+    padding: 100px 200px;
+
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #000;;
+
+}
+
+.main img{
+    width: 500px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.main img:hover{
+    transform: scale(1.1);
+}
+.image-section{
+    max-width: 100%;
+  transform: translateX(191px);
+}
+
+section h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+section h2 span{
+    display: inline-block;
+    margin: 20px 0 ;
+    color: #3a6cf4;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.main-bottom{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3a6cf4;
+    padding: 15px 35px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .5s;
+}
+
+
+.main-bottom:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+.social-icons{
+    margin: 10px 0 4px;
+}
+
+.social-icons a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+.tittle {
+
+    display: flex;
+    justify-content: center;
+    color:#3a6cf4;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-size: 1.4em;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.services{
+    padding: 30px  0;
+}
+.content .card{
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+  border-radius: 10px;
+  padding: 25px;
+  transition: .5s;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-top: 14px;
+}
+.content .card:hover{
+
+    transform: scale(1.1);
+
+}
+
+
+.script-font{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h2{
+    color: #3a6cf4;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+.projects{
+    background-color: #020202;
+    padding: 30px  0;
+}
+
+
+.projects img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.projects .project-card{
+     background-color: #0a49f6;
+     width: 300px;
+     
+     border-radius: 10px;
+     transition: .5s;
+     margin-left: 15px;
+     margin-top: 14px;
+     transition: .3s;
+    
+}
+
+.projects .project-card:hover img{
+    transform: rotate(.3deg);
+    opacity: .9;
+}
+
+
+.project-card p{
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.3em;
+    padding: 30px;
+    text-align: center;
+}
+
+.project-card{
+    text-decoration: none;
+    
+}
+
+.contact-font{
+    text-align: center;
+    font-size: 4.2em;
+    color: #3a6cf4;
+    font-weight: 1000;
+}
+
+.contact .info h2 {
+    font-weight: 800;
+    color: #000;
+}
+
+.contact p {
+    font-size: 1.6em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin-top: 30px;
+    background-color: #000016;
+   
+    color: #fff;
+}
+
+
+footer p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+footer span{
+    color: #3a6cf4;
+    font-weight: 800;
+}
+
+
+@media(max-width:1141px){
+
+    .main{
+        padding: 8px 17px;
+    }
+}
+
+
+@media (max-width:1023px){
+
+    header{
+
+        padding: 12px 20px;
+      
+        
+    }
+    body{
+        font-size: 13px;
+    }
+    .main .image-section{
+        display: none;
+    }
+
+
+    .main {
+        background: url(images/photo_5863941355313675516_y.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: .9;
+        background-position: center center;
+
+    }
+
+    .image-section{
+        margin-left: 58px;
+    }
+    
+
+    .navigation a {
+        padding-left: 10px;
+    }
+    
+    .tittle{
+        font-size: 1.8em;
+    }
+
+    .main{
+        padding: 6px 15px;
+        height: 2px;
+    }
+
+    
+
+    
+    .content{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap:wrap;
+    
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main{
+        height: 100px;
+        
+    }
+    header{
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 1.9em;
+    letter-spacing: -10px;
+    word-spacing: 20px;
+    margin: 10px 0;
+    
+  
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #3a6cf4;
+    font-weight: 800;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-10px)
+    }
+  }
+
+
+
+/* why dont loop for number?? */
